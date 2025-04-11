@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Fitree;
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+:root {
+  --color-default: #111;
+  --color-primary: #f4d04e;
+  --color-secondary: #6b6b6b;
+  --color-card-bg: #fff;
+
+  --radius-img: 10px;
+  --radius-card: 20px;
+  --radius-category: 4px;
+
+  --font-family-base: Fitree, sans-serif;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 24px;
+  --font-weight-extra-bold: 800;
+  --line-height: 1.5;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-base);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-primary);
+  color: var(--color-default);
+  margin-inline: var(--spacing-lg);
+}
+
+figure > img:first-of-type {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+  border-radius: var(--radius-img);
+}
+
+.card {
+  max-width: 384px;
+  height: 522px;
+  padding: var(--spacing-lg);
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-default);
+  border-radius: var(--radius-card);
+  box-shadow: 8px 8px 0px #000;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.category {
+  display: inline-block;
+  max-width: 82px;
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height);
+  font-weight: 700;
+  letter-spacing: 0;
+  border-radius: var(--radius-category);
+}
+
+.publish-date {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height);
+  letter-spacing: 0;
+}
+
+.content .title {
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: var(--line-height);
+  cursor: pointer;
+}
+
+.description {
+  color: var(--color-secondary);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+}
+
+.author p {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: var(--line-height);
+}
