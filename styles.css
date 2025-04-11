@@ -87,11 +87,16 @@ figure > img:first-of-type {
 }
 
 .content .title {
-  color: var(--color-primary);
+  color: var(--color-default);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-extra-bold);
   line-height: var(--line-height);
+  transition: color 0.1s ease-in-out;
+}
+
+.content .title:hover {
   cursor: pointer;
+  color: var(--color-primary);
 }
 
 .description {
