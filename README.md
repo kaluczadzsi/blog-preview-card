@@ -1,8 +1,8 @@
 # Blog preview card
 
 This project is a simple Blog preview card built using plain HTML and CSS. The
-goal was to create a clean, responsive layout for displaying a QR code with
-minimal styling.
+goal was to create a clean, responsive layout for displaying a blog preview card
+with minimal styling.
 
 ## Why Plain HTML & CSS?
 
