@@ -14,7 +14,7 @@
   --radius-category: 4px;
 
   --font-family-base: Fitree, sans-serif;
-  --font-size-sm: 14px;
+  --font-size-sm: 12px;
   --font-size-md: 16px;
   --font-size-lg: 24px;
   --font-weight-extra-bold: 800;
@@ -88,7 +88,7 @@ figure > img:first-of-type {
 
 .content .title {
   color: var(--color-default);
-  font-size: var(--font-size-lg);
+  font-size: 20px;
   font-weight: var(--font-weight-extra-bold);
   line-height: var(--line-height);
   transition: color 0.1s ease-in-out;
@@ -120,4 +120,16 @@ figure > img:first-of-type {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-extra-bold);
   line-height: var(--line-height);
+}
+
+@media (width > 576px) {
+  .content .title {
+    font-size: var(--font-size-lg);
+  }
+
+  .category,
+  .publish-date,
+  .author p {
+    font-size: 14px;
+  }
 }
