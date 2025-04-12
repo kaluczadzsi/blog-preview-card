@@ -14,16 +14,16 @@
   --radius-category: 4px;
 
   --font-family-base: Fitree, sans-serif;
-  --font-size-sm: 12px;
-  --font-size-md: 16px;
-  --font-size-lg: 24px;
+  --font-size-sm: 0.75rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.5rem;
   --font-weight-extra-bold: 800;
   --line-height: 1.5;
 
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 12px;
-  --spacing-lg: 24px;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1.5rem;
 }
 
 * {
@@ -52,8 +52,7 @@ figure > img:first-of-type {
 }
 
 .card {
-  max-width: 384px;
-  height: 522px;
+  max-width: 24rem;
   padding: var(--spacing-lg);
   background-color: var(--color-card-bg);
   border: 1px solid var(--color-default);
@@ -70,7 +69,7 @@ figure > img:first-of-type {
 
 .category {
   display: inline-block;
-  max-width: 82px;
+  max-width: 5.125rem;
   padding: var(--spacing-xs) var(--spacing-md);
   background-color: var(--color-primary);
   font-size: var(--font-size-sm);
@@ -88,7 +87,7 @@ figure > img:first-of-type {
 
 .content .title {
   color: var(--color-default);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: var(--font-weight-extra-bold);
   line-height: var(--line-height);
   transition: color 0.1s ease-in-out;
@@ -112,8 +111,8 @@ figure > img:first-of-type {
 }
 
 .author img {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
 }
 
 .author p {
@@ -122,7 +121,7 @@ figure > img:first-of-type {
   line-height: var(--line-height);
 }
 
-@media (width > 576px) {
+@media (width > 36em) {
   .content .title {
     font-size: var(--font-size-lg);
   }
@@ -130,6 +129,6 @@ figure > img:first-of-type {
   .category,
   .publish-date,
   .author p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
